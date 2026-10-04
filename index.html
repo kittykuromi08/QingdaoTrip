@@ -45,6 +45,45 @@
     <a href="#day4">🛫 귀국</a>
   </div>
 
+  <section class="fx-section" id="exchange">
+    <div class="fx-card">
+      <div class="fx-heading">
+        <div>
+          <div class="eyebrow">QINGDAO MONEY</div>
+          <h2>오늘의 환율 <span>¥ → ₩</span></h2>
+        </div>
+        <div class="fx-live"><span class="fx-dot"></span><span id="fxStatus">불러오는 중</span></div>
+      </div>
+
+      <div class="fx-rate-row">
+        <div class="fx-main-rate">
+          <span>1 CNY</span>
+          <strong id="fxRate">—</strong>
+          <small>KRW</small>
+        </div>
+        <div class="fx-date" id="fxDate">최신 데이터 확인 중</div>
+      </div>
+
+      <div class="fx-presets">
+        <button type="button" data-cny="100">¥100<br><b id="fx100">—</b></button>
+        <button type="button" data-cny="500">¥500<br><b id="fx500">—</b></button>
+        <button type="button" data-cny="1000">¥1,000<br><b id="fx1000">—</b></button>
+      </div>
+
+      <div class="fx-converter">
+        <label for="cnyInput">위안 → 원화 계산</label>
+        <div class="fx-input-row">
+          <div class="fx-input-wrap"><span>¥</span><input id="cnyInput" inputmode="decimal" type="number" min="0" step="1" value="100" aria-label="위안 금액"></div>
+          <span class="fx-equals">＝</span>
+          <div class="fx-result" id="krwResult">— 원</div>
+        </div>
+      </div>
+
+      <p class="fx-note">※ 참고용 환율입니다. 실제 카드 결제·환전소 환율 및 수수료와 다를 수 있어요.</p>
+      <p class="fx-source">환율 데이터: Frankfurter · 최신 영업일 기준</p>
+    </div>
+  </section>
+
   <section class="day-section" id="day1" data-day="1">
       <div class="day-label">DAY 1<span>10.15 THU</span></div>
       <h2>칭다오에 도착하는 날</h2>

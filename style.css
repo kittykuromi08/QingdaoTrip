@@ -60,3 +60,64 @@ footer p{font-size:8px;letter-spacing:.2em;margin-top:9px}
 .hidden{display:none!important}
 @media(min-width:700px){.hero{min-height:560px}.quick-links a:hover{transform:translateY(-2px)}}
 @media(max-width:520px){.hero{min-height:455px}.hero-copy{margin-top:55px}.day-nav{justify-content:flex-start;overflow:auto}.day-nav button{min-width:60px}.overview{padding-top:62px}.overview h1{font-size:37px}.quick-links{grid-template-columns:repeat(2,1fr)}.day-section h2{font-size:31px}}
+
+
+/* Exchange rate card */
+.fx-section {
+  padding: 10px 24px 70px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.fx-card {
+  background: #e8eeee;
+  border: 1px solid rgba(78, 93, 91, .18);
+  border-radius: 28px;
+  padding: 28px 22px 22px;
+  box-shadow: 0 14px 40px rgba(70, 70, 60, .06);
+}
+.fx-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+.fx-heading h2 { margin: 5px 0 0; font-size: 26px; }
+.fx-heading h2 span { font-size: 15px; font-weight: 500; opacity: .55; margin-left: 5px; }
+.fx-live {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; letter-spacing: .12em; text-transform: uppercase; opacity: .65;
+  padding-top: 5px;
+}
+.fx-dot { width: 7px; height: 7px; border-radius: 50%; background: #7f9fa5; display: inline-block; }
+.fx-rate-row { display: flex; align-items: end; justify-content: space-between; gap: 15px; margin: 25px 0 18px; }
+.fx-main-rate { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
+.fx-main-rate span { font-size: 14px; opacity: .65; }
+.fx-main-rate strong { font-family: Georgia, serif; font-size: 42px; line-height: 1; }
+.fx-main-rate small { font-size: 12px; opacity: .55; }
+.fx-date { font-size: 11px; opacity: .55; white-space: nowrap; }
+.fx-presets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+.fx-presets button {
+  border: 1px solid rgba(78, 93, 91, .18); background: rgba(255,255,255,.52);
+  border-radius: 14px; padding: 12px 8px; color: inherit; font: inherit; font-size: 12px; cursor: pointer;
+}
+.fx-presets button b { font-size: 13px; }
+.fx-presets button:active { transform: translateY(1px); }
+.fx-converter { margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(78, 93, 91, .14); }
+.fx-converter label { display:block; font-size: 12px; letter-spacing: .08em; opacity: .65; margin-bottom: 9px; }
+.fx-input-row { display:flex; align-items:center; gap:8px; }
+.fx-input-wrap { flex: 1; min-width: 0; display:flex; align-items:center; gap:5px; background: #fff; border:1px solid rgba(78,93,91,.18); border-radius: 13px; padding: 0 12px; }
+.fx-input-wrap span { opacity: .55; }
+.fx-input-wrap input { width:100%; border:0; outline:0; background:transparent; padding:13px 0; font: inherit; font-size:16px; }
+.fx-equals { opacity:.45; }
+.fx-result { flex:1.15; min-width:0; background: rgba(255,255,255,.58); border:1px solid rgba(78,93,91,.12); border-radius:13px; padding:13px 10px; text-align:center; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.fx-note { margin: 16px 0 0; font-size: 10px; line-height: 1.6; opacity: .55; }
+.fx-source { margin: 5px 0 0; font-size: 9px; opacity: .42; }
+@media (max-width: 430px) {
+  .fx-section { padding-left: 18px; padding-right: 18px; }
+  .fx-card { padding: 24px 17px 19px; }
+  .fx-heading h2 { font-size: 23px; }
+  .fx-main-rate strong { font-size: 37px; }
+  .fx-date { font-size: 10px; }
+  .fx-input-row { gap: 6px; }
+  .fx-result { font-size: 13px; }
+}
