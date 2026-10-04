@@ -1,6 +1,44 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f5f0e9"><title>QINGDAO — 우리의 칭다오 여행</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eee9fb"><title>QINGDAO — 우리의 칭다오 여행</title><link rel="stylesheet" href="style.css"><style id="lavender-sky-theme">
+:root{
+  --lavender:#eee9fb;
+  --lavender-deep:#d9d0f2;
+  --sky:#e2f2fb;
+  --sky-deep:#b9ddec;
+  --ink:#4b4a5a;
+  --muted:#7d7b8c;
+  --line:#d8d5e5;
+  --white:#fbfbff;
+}
+html{scroll-behavior:smooth;background:var(--lavender)}
+body{background:linear-gradient(180deg,#f4f0ff 0%,#eef7fc 48%,#f8f5ff 100%);color:var(--ink)}
+.hero{background:linear-gradient(135deg,#ddd4f4 0%,#dff1fa 100%);color:#4b4a5a}
+.hero .topline,.hero .date-pill{color:#68667a}
+.hanzi,.hero-title{color:#56536b}
+.wave{background:#eef7fc}
+.day-nav{background:rgba(247,246,255,.94);border-color:var(--line)}
+.day-nav button{color:#77758a}
+.day-nav button.active,.day-nav button:hover{background:linear-gradient(135deg,#dcd3f4,#d5ecf8);color:#4d4a60}
+.day-section,.memo-section{background:rgba(255,255,255,.68);border-color:var(--line)}
+.day-label{color:#7a71a0}
+.day-label span,.eyebrow{color:#7c91a5}
+.timeline:before{background:var(--lavender-deep)}
+.dot{background:#b8a9df;border-color:#f7f5ff}
+.time{color:#7d8fa0}
+.event-title{color:#514f61}
+.event-desc{color:#777586}
+.event-note{font-size:10px;line-height:1.55;color:#7d739c}
+.notes{background:linear-gradient(135deg,rgba(238,233,251,.72),rgba(226,242,251,.72));border-color:var(--line)}
+.notes b{color:#7a71a0}
+.check-list label{background:rgba(255,255,255,.7);border-color:var(--line);color:#5c596b}
+.check-list label:has(input:checked){background:#e9e4f8}
+.fx-card,.weather-card{background:linear-gradient(135deg,rgba(239,234,251,.92),rgba(228,244,251,.92));border-color:var(--line);box-shadow:0 14px 40px rgba(115,108,145,.08)}
+.fx-presets button{background:rgba(255,255,255,.66);border-color:var(--line);color:var(--ink)}
+.fx-input-wrap,.fx-result,.converter input{background:rgba(255,255,255,.78);border-color:var(--line)}
+textarea{background:rgba(255,255,255,.75);border-color:var(--line);color:var(--ink)}
+footer{background:linear-gradient(135deg,#e0d8f3,#dff0f8);color:#666477}
+</style></head><body>
 <header class="hero"><div class="topline"><span>TRAVEL JOURNAL</span><span>2026</span></div><div class="hero-copy"><div class="hanzi">青岛</div><div class="hero-title">QINGDAO</div><p>상하이 없는 상하이 로맨스</p><div class="date-pill">10.15 — 10.18 · 3 GIRLS TRIP</div></div><div class="wave"></div></header>
-<nav class="day-nav"><button class="active" data-filter="all">ALL</button><button data-filter="1">DAY 1<small>10.15</small></button><button data-filter="2">DAY 2<small>10.16</small></button><button data-filter="3">DAY 3<small>10.17</small></button><button data-filter="4">DAY 4<small>10.18</small></button><button data-filter="check">체크리스트</button><button data-filter="fx">환율</button><button data-filter="weather">날씨</button></nav>
+<nav class="day-nav"><button data-filter="1">DAY 1<small>10.15</small></button><button data-filter="2">DAY 2<small>10.16</small></button><button data-filter="3">DAY 3<small>10.17</small></button><button data-filter="4">DAY 4<small>10.18</small></button><button data-filter="check">체크리스트</button><button data-filter="fx">환율</button><button data-filter="weather">날씨</button></nav>
 <main>
 <section class="day-section" id="day1" data-day="1"><div class="day-label">DAY 1<span>10.15 THU</span></div><h2>칭다오 도착</h2><p class="day-sub">비행기 타고 도착해서 호텔 체크인 & 휴식</p><div class="timeline">
 <div class="timeline-item"><div class="time">17:30</div><div class="dot"></div><div class="event"><div class="event-title">인천공항 도착</div><div class="event-desc">체크인 & 수속</div></div></div>
