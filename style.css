@@ -35,4 +35,4 @@
 .travel-between{display:grid;grid-template-columns:43px 18px 1fr;gap:9px;position:relative;min-height:22px;margin-top:-8px;margin-bottom:1px;align-items:center;}
 .travel-text{grid-column:3;font-size:10px;line-height:1.3;color:#a8abbc;padding:0 0 4px;}
 .travel-text span{display:block;}
-@media(max-width:520px){.travel-between{grid-template-columns:39px 18px 1fr;gap:9px;}.travel-text{font-size:10px;}}
+@media(max-width:520px){.travel-between{grid-template-columns:39px 18px 1fr;gap:9px;}.travel-text{font-size:11px;}}
