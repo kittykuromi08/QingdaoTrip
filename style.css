@@ -29,3 +29,11 @@
   transform: scale(1.06);
   background: rgba(151, 178, 224, .28);
 }
+
+
+/* Travel-time blocks between timeline items */
+.travel-between{display:grid;grid-template-columns:43px 18px 1fr;gap:9px;position:relative;min-height:34px;margin-top:-7px;margin-bottom:3px;align-items:center;}
+.travel-marker{width:18px;text-align:center;color:#9b94c8;font-size:13px;line-height:1;z-index:2;}
+.travel-text{font-size:9px;line-height:1.45;color:#9699ad;padding:2px 0 9px;}
+.travel-text span{display:block;}
+@media(max-width:520px){.travel-between{grid-template-columns:39px 18px 1fr;gap:9px;}.travel-text{font-size:9px;}}
